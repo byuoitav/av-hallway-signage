@@ -1,0 +1,100 @@
+
+
+body {
+    display: block;
+    background-color: black;
+    --imageSplit: 723px;
+    overflow: hidden;
+    background: rgb(0, 24, 50);
+}
+
+.slideshow_section {
+    width: 100%;
+    display: block;
+    
+    text-align: center;
+    height: var(--imageSplit);
+}
+
+.imgContainer {
+    display: inline-block;
+    padding: 10px;
+}
+
+.image {
+    max-height: calc(var(--imageSplit) - 20px);
+    max-width: 1920px;
+    width: auto;
+    text-align: center;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+  }
+
+
+
+
+.calendar_section {
+    border-top: solid rgb(61, 61, 61) 2px;
+}
+
+.calendarDayContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.calendarDay {
+    background-color: white;
+    min-height: 100px;
+    width: 13%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: black solid 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    flex: .18;
+}
+
+.calendarDate {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(182, 182, 182);
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: black solid 1px;
+}
+
+.calendarJobContainer{
+
+    border-bottom: black solid 1px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.calendarInstaller {
+    display: block;
+    min-width: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.calendarJob {
+    display: block;
+    min-width: 100px;
+    font-size: 1.0rem;
+}
