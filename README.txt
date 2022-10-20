@@ -1,4 +1,4 @@
-AV Signage Setup
+<h1>AV Signage Setup<h1>
 
 - AWS Ubuntu Image
 - AWS network/firewall rules
