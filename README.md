@@ -1,7 +1,7 @@
 # AV Signage Setup
 
 - AWS Ubuntu Image
-- AWS network/firewall rules
+- AWS network/firewall rules - allow ssh and http from local network
 - Install Apache2
 - Apache Config setup for CGI
 - install python venv - can't remember if I had to install or not
