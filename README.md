@@ -7,17 +7,20 @@
 	- Create alias for mods-available/cgi.load in mods-enabled/
 	- Edit sites-available/---/default.conf
 		- DocumentRoot /var/www/html
-		- 	<Directory "/var/www/html">
+		```
+		{
+			<Directory "/var/www/html">
 	            		allow from all
        		    		Options None
     	    			Require all granted
         	  	</Directory>
-	  	- ScriptAlias /cgi-bin/ "/var/www/cgi-bin/"
+	  	 ScriptAlias /cgi-bin/ "/var/www/cgi-bin/"
 			<Directory "/var/www/cgi-bin">
     	    		Options +ExecCGI 
 	    		AddHandler cgi-script .cgi .py
        			</Directory>
-	  	
+	  	}
+		'''
 - Install python venv and pip
 	-  sudo apt install python3.10-venv
 	-  sudo apt-get install python3-pip
