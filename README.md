@@ -19,7 +19,6 @@
     	    		Options +ExecCGI 
 	    		AddHandler cgi-script .cgi .py
        			</Directory>
-		'''
 - Install python venv and pip
 	-  sudo apt install python3.10-venv
 	-  sudo apt-get install python3-pip
