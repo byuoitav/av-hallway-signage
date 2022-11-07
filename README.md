@@ -16,9 +16,9 @@
 			
 	  	 ScriptAlias /cgi-bin/ "/var/www/cgi-bin/"
 			<Directory "/var/www/cgi-bin">
-    	    		Options +ExecCGI 
-	    		AddHandler cgi-script .cgi .py
-       			</Directory>
+    	    			Options +ExecCGI 
+	    			AddHandler cgi-script .cgi .py
+			</Directory>
 - Install python venv and pip
 	-  sudo apt install python3.10-venv
 	-  sudo apt-get install python3-pip
