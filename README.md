@@ -12,7 +12,7 @@
 	            		allow from all
        		    		Options None
     	    			Require all granted
-        	  	</Directory>
+			</Directory>
 			
 	  	 ScriptAlias /cgi-bin/ "/var/www/cgi-bin/"
 			<Directory "/var/www/cgi-bin">
