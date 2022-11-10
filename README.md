@@ -29,3 +29,6 @@
 
 - Copy cgi-bin folder to /var/www/
 - Copy /html/signage/ folder to /vaw/www/html/
+- Setup cron job for BoxFile.py to run on a recurring basis.  This is how the image and excell files are updated.
+	- crontab -e
+	- add this line: "*/5 * * * * cd /var/www/cgi-bin ; /var/www/venv/bin/python /var/www/cgi-bin/BoxFile.py >> /var/www/cgi-bin/logs/cron.log 2>&1"
